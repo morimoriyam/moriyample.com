@@ -1,0 +1,767 @@
+/* font */
+@font-face {
+  font-family: "webfont";
+  src: url(../fonts/KTEGAKI.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* commmon styles */
+html, body {
+  background: #000;
+  color: #fff;
+  font-size: 5vh;
+  font-family: "webfont", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, dl, dt, dd, div, p {
+  margin: 0;
+  padding: 0;
+}
+
+dt::before {
+  content: "・";
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+dd {
+  margin-bottom: 5px;
+  font-size: 4vh;
+}
+
+/* container styles */
+#snow {
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+.content {
+  height: 11000px; /* scroll max height */
+}
+
+.container {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.mainContent {
+  height: 100%; /* scroll max width */
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10300px;
+}
+
+/* mob contents styles */
+.mobContent {
+  height: 100%; /* scroll max width */
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10300px;
+}
+
+.mob1 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 200px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob2 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 1200px 0;
+  height: 300px;
+  left: 800px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob3 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 1500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob4 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 800px 0;
+  height: 300px;
+  left: 3500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob5 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 4500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob6 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 400px 0;
+  height: 300px;
+  left: 5500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob7 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 6500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob8 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 1000px 0;
+  height: 300px;
+  left: 7500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob9 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 8500px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob10 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 600px 0;
+  height: 300px;
+  left: 9800px;
+  position: absolute;
+  width: 200px;
+}
+
+.mob11 {
+  bottom: 20%;
+  background: url(../images/mob.png);
+  background-position: 0 0;
+  height: 300px;
+  left: 11200px;
+  position: absolute;
+  width: 200px;
+}
+
+/* sp */
+@media screen and (max-width: 768px) {
+  .mob1 {
+    left: 0;
+  }
+}
+
+/* main contents styles */
+.firstContentBlock,
+.secondContentBlock,
+.thirdContentBlock,
+.fourthContentBlock,
+.fifthContentBlock,
+.sixthContentBlock,
+.seventhContentBlock,
+.ninthContentBlock,
+.tenthContentBlock,
+.lastContentBlock
+ {
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  width: 1000px;
+
+}
+
+.firstContentBlock {
+  left: 50px;
+  text-align: center;
+}
+
+.item01 {
+  font-size: 7vh;
+}
+
+.item02 {
+  font-size: 5vh;
+}
+
+.pleaseMessage {
+  animation: flashing 2s infinite;
+  margin-top: 1rem;
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.item03,
+.item05,
+.item07,
+.item09,
+.item11,
+.item13,
+.item15,
+.item17,
+.item19 {
+  font-size: 5vh;
+}
+
+.item04,
+.item06,
+.item08,
+.item10,
+.item12,
+.item14,
+.item16,
+.item18 {
+  font-size: 4vh;
+  margin-top: 10px;
+}
+
+.item20 {
+  background: url(../images/dram.png);
+  bottom: 0;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  width: 550px;
+  z-index: 2;
+}
+
+.secondContentBlock {
+  left: 2100px;
+}
+
+.thirdContentBlock {
+  left: 3100px;
+}
+
+.fourthContentBlock {
+  left: 4100px;
+}
+
+.fifthContentBlock {
+  left: 5100px;
+}
+
+.sixthContentBlock {
+  left: 6100px;
+}
+
+.seventhContentBlock {
+  left: 7100px;
+}
+
+.ninthContentBlock {
+  left: 8100px;
+}
+
+.tenthContentBlock {
+  left: 9100px;
+}
+
+.lastContentBlock {
+  left: 10100px;
+}
+
+/* sp */
+@media screen and (max-width: 768px) {
+  .content {
+    height: 20500px;
+  }
+
+  .mainContent {
+    width: 19300px;
+  }
+
+  .mobContent {
+    width: 19300px;
+  }
+
+  .item01 {
+    font-size: 5vh;
+  }
+  
+  .item02 {
+    font-size: 3vh;
+  }
+
+  .secondContentBlock {
+    left: 3100px;
+  }
+  
+  .thirdContentBlock {
+    left: 5100px;
+  }
+  
+  .fourthContentBlock {
+    left: 7100px;
+  }
+  
+  .fifthContentBlock {
+    left: 9100px;
+  }
+  
+  .sixthContentBlock {
+    left: 11100px;
+  }
+  
+  .seventhContentBlock {
+    left: 13100px;
+  }
+  
+  .ninthContentBlock {
+    left: 15100px;
+  }
+  
+  .tenthContentBlock {
+    left: 17100px;
+  }
+  
+  .lastContentBlock {
+    left: 19100px;
+  }
+}
+
+/* me */
+.meContent {
+  left: 50%;
+  position: absolute;
+  bottom: 18%;
+}
+
+.me {
+  height: 200px;
+  left: -100px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+
+.meSprite {
+  background-image: url(../images/me_sprite.png);
+  height: 1400px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1200px;
+}
+
+#meMoveRight {
+  animation: meMoveRight 1s steps(2);
+}
+
+@keyframes meMoveRight {
+  0% {
+    left: -200px;
+    top: 0;
+  }
+  100% {
+    left: -600px;
+    top: 0;
+  }
+}
+
+#meMoveLeft {
+  animation: meMoveLeft 1s steps(2);
+}
+
+@keyframes meMoveLeft {
+  0% {
+    left: -600px;
+    top: 0;
+  }
+  100% {
+    left: -1000px;
+    top: 0;
+  }
+}
+
+#meContainerMoveJump {
+  animation: meMoveJump 1.5s linear;
+}
+
+#meMoveJump {
+  left: -1000px;
+}
+
+@keyframes meMoveJump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -80px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#infantMeMoveRight {
+  animation: infantMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes infantMeMoveRight {
+  0% {
+    left: 0;
+    top: -200px;
+  }
+  100% {
+    left: -400px;
+    top: -200px;
+  }
+}
+
+#infantMeMoveLeft {
+  animation: infantMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes infantMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -200px;
+  }
+  100% {
+    left: -800px;
+    top: -200px;
+  }
+}
+
+#elementaryMeMoveRight {
+  animation: elementaryMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes elementaryMeMoveRight {
+  0% {
+    left: 0;
+    top: -400px;
+  }
+  100% {
+    left: -400px;
+    top: -400px;
+  }
+}
+
+#elementaryMeMoveLeft {
+  animation: elementaryMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes elementaryMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -400px;
+  }
+  100% {
+    left: -800px;
+    top: -400px;
+  }
+}
+
+#middleMeMoveRight {
+  animation: middleMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes middleMeMoveRight {
+  0% {
+    left: 0;
+    top: -600px;
+  }
+  100% {
+    left: -400px;
+    top: -600px;
+  }
+}
+
+#middleMeMoveLeft {
+  animation: middleMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes middleMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -600px;
+  }
+  100% {
+    left: -800px;
+    top: -600px;
+  }
+}
+
+#highMeMoveRight {
+  animation: highMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes highMeMoveRight {
+  0% {
+    left: 0;
+    top: -800px;
+  }
+  100% {
+    left: -400px;
+    top: -800px;
+  }
+}
+
+#highMeMoveLeft {
+  animation: highMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes highMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -800px;
+  }
+  100% {
+    left: -800px;
+    top: -800px;
+  }
+}
+
+#collegeMeMoveRight {
+  animation: collegeMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes collegeMeMoveRight {
+  0% {
+    left: 0;
+    top: -1000px;
+  }
+  100% {
+    left: -400px;
+    top: -1000px;
+  }
+}
+
+#collegeMeMoveLeft {
+  animation: collegeMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes collegeMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -1000px;
+  }
+  100% {
+    left: -800px;
+    top: -1000px;
+  }
+}
+
+#societyMeMoveRight {
+  animation: societyMeMoveRight 1s steps(2) infinite;
+}
+
+@keyframes societyMeMoveRight {
+  0% {
+    left: 0;
+    top: -1200px;
+  }
+  100% {
+    left: -400px;
+    top: -1200px;
+  }
+}
+
+#societyMeMoveLeft {
+  animation: societyMeMoveLeft 1s steps(2) infinite;
+}
+
+@keyframes societyMeMoveLeft {
+  0% {
+    left: -400px;
+    top: -1200px;
+  }
+  100% {
+    left: -800px;
+    top: -1200px;
+  }
+}
+
+/* ground */
+.horizonContent {
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 20100px;
+}
+.horizonLine {
+  height: 90%;
+  left: 0;
+  position: absolute;
+  top: 80%;
+  width: 20100px;
+}
+
+.horizonLineTop,
+.horizonLineBottom {
+  position: absolute;
+  width: 100%;
+}
+
+.horizonLineBottom {
+  background-image: url(../images/brick.png);
+  height: 100%;
+}
+
+.horizonLineTop {
+  background-image: url(../images/snow.png);
+  height: 50px;
+}
+
+/* modal */
+.modal {
+  display: none;
+}
+
+.modalEnable {
+  display: block;
+}
+
+.modalBody {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 3;
+}
+
+.modalWindow {
+  animation: fadein .3s 1, zoomin .3s 1;
+  position: relative;
+  z-index: 4;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.closeButton {
+  align-items: center;
+  background: #fff;
+  border: solid 1px #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  transition: all .2s ease;
+  width: 40px;
+}
+
+.closeButton:hover {
+  background: #333;
+}
+
+.closeButton svg {
+  align-items: center;
+  display: flex;
+  fill: #333;
+}
+
+.closeButton:hover svg {
+  fill: #fff;
+}
+
+.modalInner {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  width: 80vw;
+}
+
+.modalContent {
+  color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.gameStart {
+  background: #fff;
+  border: solid 2px #333;
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.gameStart:hover {
+  background: #333;
+  color: white;
+}
+
+/* general purpose styles */
+.br::after {
+  content: "\A";
+  white-space: pre;
+}
